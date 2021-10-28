@@ -3,7 +3,7 @@ search this (in ACMD(do_user_horse_ride)):
 	if (ch->IsHorseRiding() == false)
 
 		
-after before this:
+add before this:
 
 	LPITEM armor = ch->GetWear(WEAR_BODY);
 	if (armor)
