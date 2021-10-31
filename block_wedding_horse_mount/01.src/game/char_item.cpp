@@ -31,7 +31,8 @@ change to:
             return false;
         }
         
-        if (iWearCell == (item->GetVnum() >= 11901 && item->GetVnum() <= 11904))
+        LPITEM checkItem = GetWear(WEAR_BODY);
+        if (checkItem && checkItem->GetVnum() >= 11901 && checkItem->GetVnum() <= 11904)
         {
             ChatPacket(CHAT_TYPE_INFO, LC_TEXT("¸»Ŕ» Ĺş »óĹÂżˇĽ­ żąşąŔ» ŔÔŔ» Ľö ľř˝Ŕ´Ď´Ů."));
             return false;
